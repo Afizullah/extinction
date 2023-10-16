@@ -1,0 +1,1 @@
+Main^^.fla contains the sprites of the game and some part of the code linked to graphical interface. You will need a software to open and edit it.

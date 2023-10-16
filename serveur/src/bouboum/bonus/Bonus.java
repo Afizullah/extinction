@@ -1,0 +1,44 @@
+/*
+	Copyright 2020, Atelier801
+
+    These files are part of Extinction Minijeux.
+
+    Extinction Minijeux is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Extinction Minijeux is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Extinction Minijeux.  If not, see <https://www.gnu.org/licenses/>.
+
+*/
+
+package bouboum.bonus;
+
+import bouboum.Bombe;
+import joueur.Joueur;
+
+public abstract class Bonus {
+	protected int typeBombe;
+	protected Joueur owner;
+	protected boolean estSecondaire;
+	
+	public Bonus(Joueur owner) {
+		typeBombe = Bombe.BOMBE_NORMALE;
+	}
+	
+	public int genererBombe() {
+		return typeBombe;
+	}
+	
+	public void aTue(Joueur mort, Joueur tueur) {
+	}
+	
+	public void mortUtilisateur(Joueur mort, Joueur tueur) {
+	}
+}
